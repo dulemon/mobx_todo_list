@@ -1,0 +1,66 @@
+.todolist {
+  background: rgba(47, 47, 47, 0.98);
+  height: 100%;
+  .title {
+    width: 600px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+  .wrap {
+    height: calc(100% - 51px);
+    background-color: #cdcdcd;
+    .search {
+      width: 600px;
+      margin: 0 auto;
+      padding: 10px 0;
+    }
+    .content {
+      width: 600px;
+      margin: 0 auto;
+      padding: 10px 0;
+      .item {
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        .text {
+          font-size: 20px;
+          font-weight: bolder;
+        }
+        .count {
+          border-radius: 50%;
+          background-color: #e6e6fa;
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          font-weight: 600;
+          color: #666;
+        }
+      }
+      .todo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        background: #fff;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-radius: 4px;
+
+        .left {
+        }
+        .right {
+        }
+      }
+      .finished {
+        opacity: 0.5;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 7%);
+      }
+    }
+  }
+}

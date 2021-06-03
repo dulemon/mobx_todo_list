@@ -1,10 +1,14 @@
-import TodoList from "./views/TodoList.jsx";
+import TodoList from "./views/TodoList/TodoList.jsx";
+import todoListStore from "./stores/TodoListStore";
+import { Provider } from "mobx-react";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <TodoList />
+      <Provider todoList={todoListStore}>
+        <TodoList />
+      </Provider>
     </div>
   );
 }
